@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@/*": [
+                "resources/js/client/*"
+            ],
+            "@vendor/*": [
+                "public/vendor/*"
+            ],
+            "ziggy": [
+                "vendor/tightenco/ziggy/dist/index.es.js"
+            ]
+        }
+    }
+}

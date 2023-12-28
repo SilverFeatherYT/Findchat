@@ -1,0 +1,75 @@
+* {
+    font-family: 'Quicksand', sans-serif !important;
+    /*font-family: 'Instrument Sans', sans-serif;*/
+    /*text-shadow: #d1d5db 1px 1px 32px;*/
+}
+
+.react-datepicker-wrapper {
+    display: block !important;
+    /*width: 100% !important;*/
+}
+
+.react-datepicker__navigation {
+    top: 8px !important;
+}
+
+.ck-editor__editable_inline {
+    min-height: 360px;
+}
+
+.no-text-shadow {
+    text-shadow: none !important;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+.card div.carousel {
+    border-top-left-radius: 0.75rem !important;
+    border-top-right-radius: 0.75rem !important;
+}
+
+div.carousel .control-dots {
+    margin: 0.5rem 0 !important;
+}
+
+div.carousel .control-dots .dot {
+    margin: 0 2px !important;
+}
+
+input.no-control::-webkit-outer-spin-button,
+input.no-control::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+span[data-notify="title"]::after {
+    content: '\A';
+    white-space: pre;
+}
+
+/*********** Chat CSS ***************/
+.receive-chat::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:-12px;
+    width:20px;
+    height:20px;
+    background: linear-gradient(225deg,rgba(var(--bs-primary-rgb)) 0%, rgba(var(--bs-primary-rgb)) 50%, transparent 50%,transparent);
+
+}
+
+.send-chat::before{
+    content: '';
+    position: absolute;
+    top:0;
+    right:-12px;
+    width:20px;
+    height:20px;
+    background: linear-gradient(135deg,rgb(255 255 255) 0%, rgb(255 255 255) 50%, transparent 50%,transparent);
+
+}
+
